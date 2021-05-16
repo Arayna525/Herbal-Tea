@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=chrome" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Herbal Tea</title>
+    <style>
+      body {
+        background: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/008/992/original/lavender_plant.jpg?1621119663");
+        background-size: cover;
+        background-position: center;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        padding: 5px;
+        max-width: 75%;
+        border-radius: 30px;
+      }
+      h1 {
+        color: rgb(25, 20, 31);
+        font-size: 30px;
+        text-align: center;
+        font-weight: 900;
+        margin: 0 auto;
+      }
+      h2 {
+        color: rgb(25, 20, 31);
+        text-align: center;
+        font-size: 20px;
+        font-weight: bolder;
+        border: 3px solid rebeccapurple;
+        border-radius: 4px;
+        padding: 20px;
+      }
+      p {
+        display: justify;
+        color: rgb(25, 20, 31);
+        font-size: 15px;
+        line-height: 1.5;
+      }
+      button {
+        display: block;
+        color: whitesmoke;
+        font-size: 20px;
+        padding: 15px 20px;
+        margin: 20px auto;
+        background: rebeccapurple;
+        border: 2px solid #8064c7;
+        border-radius: 6px;
+        box-shadow: 5px 5px 10px rgb(0 0 0 / 30%);
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        cursor: pointer;
+        background: transparent;
+        color: rebeccapurple;
+      }
+      .learn-more {
+        font-weight: bold;
+        display: block;
+        margin-top: 5px;
+        text-decoration: none;
+        padding: 1%;
+      }
+      .learn-more:hover {
+        text-decoration: underline;
+      }
+      .container {
+        background: radial-gradient(
+          circle at 10% 20%,
+          rgb(186, 190, 245) 0%,
+          rgb(192, 192, 245) 33.1%,
+          rgb(218, 203, 246) 90%
+        );
+        margin: 0 auto;
+        border-radius: 10px;
+        max-width: 600px;
+        opacity: 0.92;
+        padding: 30px 30px;
+        box-shadow: 5px 5px 10px rgb(0 0 0 / 30%);
+      }
+      .footer {
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>I Love Herbal Tea</h1>
+      <h2><em>Especialy Lavender Chamomile</em></h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/008/979/original/chamomile-with-lavender_tea.png?1621116333"
+      />
+      <p>
+        Chamomile and Lavender Tea is a relaxing blend that offers a myriad of
+        health benefits. This blend can be used to relieve nausea, induce
+        relaxation and reduce anxiety and stress. Chamomile and Lavender Tea may
+        also help support the digestive system, stimulate your immune system and
+        deliver a good dose of calcium and magnesium. This blend is also a
+        natural anti-inflammatory. Chamomile Lavender Tea is also caffeine free
+        making it enjoyable at any time.
+      </p>
+
+      <a
+        href="https://en.wikipedia.org/wiki/Herbal_tea"
+        target="_blank"
+        class="learn-more"
+      >
+        👉Learn more about herbal tea here
+      </a>
+      <br />
+      <button>Order Here</button>
+
+      <p class="footer">
+        This page was built by:
+        <span>
+          <strong>Arayna Hamilton</strong>
+        </span>
+      </p>
+    </div>
+    <script>
+      function buyNow() {
+        let firstname = prompt("What is your first name?");
+        let tea = prompt("Do you drink herbal tea?");
+
+        if (tea === "yes" || tea === "YES") {
+          alert(firstname + "" + ", isn't herbal tea delicious!🍵");
+        } else {
+          if (tea === "no" || tea === "NO");
+          alert(
+            firstname + "" + ", give herbal tea a try you won't regret it!😎"
+          );
+        }
+      }
+      let buyNowButton = document.querySelector("button");
+      buyNowButton.addEventListener("click", buyNow);
+    </script>
+  </body>
+</html>
